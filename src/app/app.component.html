@@ -1,1 +1,13 @@
 <h1>{{ title }}</h1>
+
+<div class="buttons">
+  <button (click)="addToLocalStorage()">Add to Local Storage</button>
+  <button (click)="getFromLocalStorage()">Get from Local Storage</button>
+  <button (click)="removeFromLocalStorage()">Remove from Local Storage</button>
+  <button (click)="addToSessionStorage()">Add to Session Storage</button>
+  <button (click)="getFromSessionStorage()">Get from Session Storage</button>
+  <button (click)="removeFromSessionStorage()">Remove Session Storage</button>
+  <button (click)="clearLocalStorage()">Clear Local Storage</button>
+  <button (click)="clearSessionStorage()">Clear Session Storage</button>
+  <button (click)="clearStorage()">Clear Storage</button>
+</div>
