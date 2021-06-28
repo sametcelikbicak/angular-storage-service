@@ -6,3 +6,7 @@ p {
   display: flex;
   flex-direction: row;
 }
+
+.margin-top {
+  margin-top: 50px;
+}

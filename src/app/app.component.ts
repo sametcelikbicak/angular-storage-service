@@ -10,6 +10,8 @@ export class AppComponent {
   public title = `Angular ${VERSION.major} Storage Servis Kullanımı`;
   private key = 'StorageKey';
   private value = 'StorageValue';
+  public label: string;
+  public result: string;
 
   constructor(private storageService: StorageService) {}
 
@@ -17,19 +19,37 @@ export class AppComponent {
     this.storageService.addToLocalStorage(this.key, this.value);
   }
 
-  public addToSessionStorage(): void {}
+  public addToSessionStorage(): void {
+    this.storageService.addToSessionStorage(this.key, this.value);
+  }
 
-  public getFromLocalStorage(): any {}
+  public getFromLocalStorage(): any {
+    this.label = 'Get from Local Storage';
+    this.result = this.storageService.getFromLocalStorage(this.key);
+  }
 
-  public getFromSessionStorage(): any {}
+  public getFromSessionStorage(): any {
+    this.label = 'Get from Session Storage';
+    this.result = this.storageService.getFromSessionStorage(this.key);
+  }
 
-  public removeFromLocalStorage(): void {}
+  public removeFromLocalStorage(): void {
+    this.storageService.removeFromLocalStorage(this.key);
+  }
 
-  public removeFromSessionStorage(): void {}
+  public removeFromSessionStorage(): void {
+    this.storageService.removeFromSessionStorage(this.key);
+  }
 
-  public clearLocalStorage(): void {}
+  public clearLocalStorage(): void {
+    this.storageService.clearLocalStorage();
+  }
 
-  public clearSessionStorage(): void {}
+  public clearSessionStorage(): void {
+    this.storageService.clearSessionStorage();
+  }
 
-  public clearStorage(): void {}
+  public clearStorage(): void {
+    this.storageService.clearStorage();
+  }
 }
