@@ -1,3 +1,3 @@
-# angular-ivy-a2t2z6
+# angular-storage-service
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-a2t2z6)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-storage-service)
